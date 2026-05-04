@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="contact-page" data-page="contact">
+  <header>
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">V</div>
+        <div class="brand-text">
+          <span>Vansh's</span>
+          <small>Portfolio Website</small>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About Me</a>
+        <a data-nav href="skills.html">Skills</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+    </div>
+    <div class="mobile-nav">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="about.html">About Me</a>
+      <a data-nav href="skills.html">Skills</a>
+      <a data-nav href="projects.html">Projects</a>
+      <a data-nav href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="card fade-up">
+        <p class="page-kicker">Contact</p>
+        <h1 class="page-title">A simple way for people to reach you.</h1>
+        <p class="page-copy">
+          
+        </p>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="contact-wrap">
+        <div class="card contact-box fade-up">
+          <h2>Contact details</h2>
+          <div class="contact-list">
+            <div class="contact-item">
+              <strong>Email</strong>
+              <span>vanshgamerop@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <strong>GitHub</strong>
+              <span>
+                <a href="https://github.com/VanshWebDevloper">https://github.com/VanshWebDevloper</a></span>
+            </div>
+            <div class="contact-item">
+              <strong>LinkedIn</strong>
+              <span></span>
+            </div>
+            <div class="contact-item">
+              <strong>Location</strong>
+              <span>[Delhi/India]</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card contact-box fade-up">
+          <h2>Send a message</h2>
+          <form>
+            <div>
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="Your email" />
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Vansh • Contact page</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="projects-page" data-page="projects">
+  <header>
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">V</div>
+        <div class="brand-text">
+          <span>Vansh's</span>
+          <small>Portfolio Website</small>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About Me</a>
+        <a data-nav href="skills.html">Skills</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+    </div>
+    <div class="mobile-nav">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="about.html">About Me</a>
+      <a data-nav href="skills.html">Skills</a>
+      <a data-nav href="projects.html">Projects</a>
+      <a data-nav href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="card fade-up">
+        <p class="page-kicker">Projects</p>
+        <h1 class="page-title">My Projects Showcase</h1>
+        <p class="page-copy">
+          I upload my projects on Github so, use my github profile link to view my projects.
+          <p></p>
+          <a href ="https://github.com/VanshWebDevloper">
+            Click it 👆</a>
+        </p>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="website">Websites</button>
+          <button class="filter-btn" data-filter="ui">UI Design</button>
+          <button class="filter-btn" data-filter="app">Apps</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="projects-grid">
+        <article class="card project-card fade-up" data-project data-category="website">
+          <h3>Demo Company Web</h3>
+          <p>
+            Nexus Demo is a functional project built to bridge the gap between theoretical code and real-world application. It serves as a dedicated testing ground for mastering responsive UI, complex logic, and clean architecture. This site showcases my ability to build scalable, performance-driven web solutions from scratch. 🚀
+
+          </p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="hero-actions" style="justify-content:flex-start; margin-top:18px;">
+            <button class="btn btn-secondary" data-open-modal data-title="Project Title One" data-desc="Add your project details here.">Details</button>
+            <a href ="https://vanshwebdevloper.github.io/Website-sample/" class="btn btn-primary" href="#">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="card project-card fade-up" data-project data-category="ui">
+          <h3>Funngro Revamp</h3>
+          <p>
+            A modern UI concept with clean sections, good spacing, and a premium visual style.
+            It is recreated for funngro company just for a evalution project
+          </p>
+          <div class="tags">
+            <span class="tag">UI/UX</span>
+            <span class="tag">Responsive</span>
+            <span class="tag">Design</span>
+          </div>
+          <div class="hero-actions" style="justify-content:flex-start; margin-top:18px;">
+            <button class="btn btn-secondary" data-open-modal data-title="Project Title Two" data-desc="Add your project details here.">Details</button>
+            <a class="btn btn-primary" href="https://vanshwebdevloper.github.io/Funngro-Revamp/">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="card project-card fade-up" data-project data-category="app">
+          <h3>Project Title Three</h3>
+          <p>
+            A small app or tool with useful interaction, polished layout, and clean components.
+          </p>
+          <div class="tags">
+            <span class="tag">App</span>
+            <span class="tag">Logic</span>
+            <span class="tag">Features</span>
+          </div>
+          <div class="hero-actions" style="justify-content:flex-start; margin-top:18px;">
+            <button class="btn btn-secondary" data-open-modal data-title="Project Title Three" data-desc="Add your project details here.">Details</button>
+            <a class="btn btn-primary" href="#">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="card project-card fade-up" data-project data-category="website">
+          <h3>Project Title Four</h3>
+          <p>
+            
+          </p>
+          <div class="tags">
+            <span class="tag">Landing Page</span>
+            <span class="tag">Creative</span>
+            <span class="tag">Modern</span>
+          </div>
+          <div class="hero-actions" style="justify-content:flex-start; margin-top:18px;">
+            <button class="btn btn-secondary" data-open-modal data-title="Project Title Four" data-desc="Add your project details here.">Details</button>
+            <a class="btn btn-primary" href="#">Live Demo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal">
+    <div class="modal-content">
+      <h3 id="modal-title">Project</h3>
+      <p id="modal-desc" class="page-copy">Details go here.</p>
+      <div class="hero-actions" style="justify-content:flex-start; margin-top:18px;">
+        <button class="btn btn-secondary" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2026 Vansh • Projects page</footer>
+  <script src="script.js"></script>
+</body>
+</html>
