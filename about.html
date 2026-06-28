@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | About Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="about-page" data-page="about">
+  <header>
+    <div class="navbar">
+      <!-- Upgraded Interactive Logo Section -->
+      <a class="brand" href="#" id="interactive-logo" onclick="return false;">
+        <div class="brand-mark-custom">
+          <span class="bracket">&lt;/</span>
+          
+          <span class="bracket">&gt;</span>
+        </div>
+        <div class="brand-text">
+          <span>Coolzie</span>
+          <small>Portfolio Website</small>
+        </div>
+        <!-- Speech Bubble Popup -->
+        <div class="speech-bubble" id="logo-popup">What's up! 👋</div>
+      </a>
+
+      <nav class="nav-links">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html" class="active">About Me</a>
+        <a data-nav href="skills.html">Skills</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+    </div>
+    <div class="mobile-nav">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="about.html">About Me</a>
+      <a data-nav href="skills.html">Skills</a>
+      <a data-nav href="projects.html">Projects</a>
+      <a data-nav href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="card fade-up">
+        <p class="page-kicker">About me</p>
+        <h1 class="page-title">I am a young website developer. I started early, that's why I think I'm the best.</h1>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="about-grid grid-2">
+        
+        <!-- Fixed HTML Bug Here (Removed premature closing div) -->
+        <div class="card profile-box fade-up animation-delay-1">
+          <div class="profile-header">
+            <div class="avatar-custom">&lt;/&gt;</div>
+            <h2>Profile</h2>
+          </div>
+          <p class="page-copy">
+            <strong>Name:</strong> Coolzie<br>
+            <strong>Age:</strong> 13<br>
+            <strong>Role:</strong> Student<br>
+            <strong>Country:</strong> India
+          </p>
+          <div class="info-list">
+            <div class="info-row">
+              <strong>Education</strong>
+              <span>Freecodecamp - Responsive Web Development</span>
+            </div>
+            <div class="info-row">
+              <strong>Focus</strong>
+              <span>Responsive websites, clean UI, and practical projects</span>
+            </div>
+            <div class="info-row">
+              <strong>Availability</strong>
+              <span>Internships, freelance work, and personal projects</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card profile-box fade-up animation-delay-2">
+          <h2>Journey</h2>
+          <div class="info-list">
+            <div class="info-row">
+              <strong>2024</strong>
+              <span>Started learning HTML, CSS, and JavaScript</span>
+            </div>
+            <div class="info-row">
+              <strong>2025</strong>
+              <span>Built more projects and improved UI/UX skills</span>
+            </div>
+            <div class="info-row">
+              <strong>2026</strong>
+              <span>Creating a strong portfolio and real practice projects</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Coolzie • About page</footer>
+  <script src="script.js"></script>
+</body>
+</html>

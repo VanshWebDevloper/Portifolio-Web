@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="projects-page" data-page="projects">
+  <header>
+    <div class="navbar">
+      <a class="brand" href="#" id="interactive-logo" onclick="return false;">
+        <div class="brand-mark-custom">
+          <span class="bracket">&lt;/</span>
+          
+          <span class="bracket">&gt;</span>
+        </div>
+        <div class="brand-text">
+          <span>Coolzie</span>
+          <small>Portfolio Website</small>
+        </div>
+        <div class="speech-bubble" id="logo-popup">What's up! 👋</div>
+      </a>
+
+      <nav class="nav-links">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About Me</a>
+        <a data-nav href="skills.html">Skills</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+    </div>
+    <div class="mobile-nav">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="about.html">About Me</a>
+      <a data-nav href="skills.html">Skills</a>
+      <a data-nav href="projects.html">Projects</a>
+      <a data-nav href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="card fade-up">
+        <p class="page-kicker">Projects</p>
+        <h1 class="page-title">My Projects Showcase</h1>
+        <div class="page-copy">
+          <p>I upload my projects on GitHub, so use my GitHub profile link to view all my open-source repositories.</p>
+          <div style="margin-top: 12px;">
+            <a href="https://github.com/VanshWebDevloper" target="_blank" style="font-weight: 600; color: #22d3ee; text-decoration: underline;">
+              Click it 👆
+            </a>
+          </div>
+        </div>
+ 
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="website">Websites</button>
+          <button class="filter-btn" data-filter="ui">UI Design</button>
+          <button class="filter-btn" data-filter="app">Apps</button >
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="projects-grid">
+        <article class="card project-card fade-up" data-project data-category="website">
+          <h3>Demo Company Web</h3>
+          <p>
+            Nexus Demo is a functional project built to bridge the gap between theoretical code and real-world application. It serves as a dedicated testing ground for masterning responsive UI, complex logic, ann d clean architecture. This site showcases my ability to build scalable,n performance-driven web solutions from scratch. 🚀
+          </p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="hero-actions" style="justify-content:flex-start; margin-top:18px;">
+            <button class="btn btn-secondary" data-open-modal data-title="Demo Company Web" data-desc="A fully interactive business template built to experiment with modular CSS components, grid systems, and multi-device navigation structures.">Details</button>
+            <a href="https://vanshwebdevloper.github.io/Website-sample/" target="_blank" class="btn btn-primary">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="card project-card fade-up" data-project data-category="ui">
+          <h3>Funngro Revamp</h3>
+          <p>
+            A modern UI concept with clean sections, good spacing, and a premium visual style.
+            It is recreated for Funngro company just for an evaluation project.
+          </p>
+          <div class="tags">
+            <span class="tag">UI/UX</span>
+            <span class="tag">Responsive</span>
+            <span class="tag">Design</span>
+          </div>
+          <div class="hero-actions" style="justify-content:flex-start; margin-top:18px;">
+            <button class="btn btn-secondary" data-open-modal data-title="Funngro Revamp" data-desc="This UI evaluation showcase focuses entirely onn  enhancing micro-interactions, layout alignment, typography contrast, and aesthetic neon dark themes.">Details</button>
+            <a href="https://vanshwebdevloper.github.io/Funngro-Revamp/" target="_blank" class="btn btn-primary">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="card project-card fade-up" data-project data-category="app">
+          <h3>Project Title Three</h3>
+          <p>
+            A small app or tool with useful interaction, polished layout, and clean components.
+          </p>
+          <div class="tags">
+            <span class="tag">App</span>
+            <span class="tag">Logic</span>
+            <span class="tag">Features</span>
+          </div>
+          <div class="hero-actions" style="justify-content:flex-start; margin-top:18px;">
+            <button class="btn btn-secondary" data-open-modal data-title="Project Title Three" data-desc="Custom application utility using internal JavaScript states and local triggers for clean component logic rendering.">Details</button>
+            <a class="btn btn-primary" href="#">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="card project-card fade-up" data-project data-category="website">
+          <h3>Project Title Four</h3>
+          <p>
+            A landing page or single-page application built to showcase smooth content section layouts and clean typography systems.
+          </p>
+          <div class="tags">
+            <span class="tag">Landing Page</span>
+            <span class="tag">Creative</span>
+            <span class="tag">Modern</span>
+          </div>
+          <div class="hero-actions" style="justify-content:flex-start; margin-top:18px;">
+            <button class="btn btn-secondary" data-open-modal data-title="Project Title Four" data-desc="High-performance structural landing layout optimized completely for semantic HTML structural parameters.">Details</button>
+            <a class="btn btn-primary" href="#">Live Demo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal">
+    <div class="modal-content">
+      <h3 id="modal-title">Project</h3>
+      <p id="modal-desc" class="page-copy">Details go here.</p>
+      <div class="hero-actions" style="justify-content:flex-start; margin-top:18px;">
+        <button class="btn btn-secondary" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2026 Coolzie • Projects page</footer>
+  <script src="script.js"></script>
+</body>
+</html>
